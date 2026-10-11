@@ -15,10 +15,9 @@ window.KM_CONFIG = {
   city: "Abbottabad",
   country: "Pakistan",
 
-  // Full street address. Leave empty ("") to show only "Abbottabad, Pakistan".
-  // CONFIRM BEFORE LAUNCH: the Google Maps link could not be read when the
-  // site was built, so no street address has been entered.
-  streetAddress: "",
+  // Address as shown on the business's Google Maps listing (a Google Plus Code,
+  // which Maps and phones understand). Replace with a street address if preferred.
+  streetAddress: "56PM+X29",
 
   phone: {
     display: "+92 317 0551116",
@@ -30,17 +29,17 @@ window.KM_CONFIG = {
     number: "923170551116"          // international format, no "+" or spaces
   },
 
-  // CONFIRM BEFORE LAUNCH: originally supplied as "clickhassankhan@gmailcom".
-  // Corrected provisionally to the address below.
+  // Confirmed by the owner.
   email: "clickhassankhan@gmail.com",
-  emailConfirmed: false,
+  emailConfirmed: true,
 
-  // Opening hours as supplied. Opening DAYS were not supplied, so none are shown.
+  // Opening hours, as shown on the Google Maps listing.
   hours: {
     open: "9:00 AM",
     close: "8:00 PM",
     timezoneLabel: "Pakistan Standard Time",
-    days: ""                        // e.g. "Monday to Saturday" once confirmed
+    days: "Saturday to Thursday",
+    closedDays: "Friday"            // shown as "Closed Friday"; set to "" if open every day
   },
 
   mapsUrl: "https://share.google/1s10INRJnDK1DWM55",

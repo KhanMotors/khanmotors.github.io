@@ -57,7 +57,8 @@
   const address = () => (C.streetAddress ? C.streetAddress + ", " : "") + C.city + ", " + C.country;
   function hoursLong() {
     const h = `${C.hours.open} to ${C.hours.close}, ${C.hours.timezoneLabel}`;
-    return C.hours.days ? `${C.hours.days}, ${h}` : h;
+    const open = C.hours.days ? `${C.hours.days}, ${h}` : h;
+    return C.hours.closedDays ? `${open}. Closed ${C.hours.closedDays}` : open;
   }
 
   const ICON_PIN = `<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>`;
@@ -71,7 +72,7 @@
       phone: C.phone.display,
       whatsapp: C.whatsapp.display,
       email: C.email,
-      hoursShort: `${C.hours.open} to ${C.hours.close}`,
+      hoursShort: `${C.hours.open} to ${C.hours.close}` + (C.hours.closedDays ? ` · Closed ${C.hours.closedDays}` : ""),
       hoursLong: hoursLong(),
       address: address(),
       year: String(new Date().getFullYear())
@@ -452,7 +453,7 @@
     },
     contact: {
       title: "Contact | Khan Motors and Property Dealer, Abbottabad",
-      desc: "Call or WhatsApp " + C.phone.display + ". Open " + hoursLong() + ". Abbottabad, Pakistan."
+      desc: "Call or WhatsApp " + C.phone.display + ". Open " + hoursLong() + ". " + address() + "."
     }
   };
 

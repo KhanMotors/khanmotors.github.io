@@ -28,12 +28,12 @@ Pages use hash links (`#vehicles`, `#properties`, `#contact` and so on), so the 
 
 ## 3. To confirm before launch
 
-1. **Email address.** It was supplied as `clickhassankhan@gmailcom` and is shown provisionally as `clickhassankhan@gmail.com`. Confirm it, then set `emailConfirmed: true`.
-2. **Street address.** The Google Maps share link could not be read while building, so the site shows "Abbottabad, Pakistan". Add the full address to `streetAddress` in `config.js` once confirmed. The "Open in Google Maps" button already uses the supplied link.
-3. **Opening days.** Only the hours (9:00 AM to 8:00 PM PKT) were supplied. Add the days to `hours.days` when confirmed, for example `"Monday to Saturday"`.
-4. **Real inventory and photos.** Every listing and image is a labelled demo. Replace them with real stock and photos you own or are licensed to use.
-5. **Domain.** Once you have one, add `<link rel="canonical">` and an `og:image` in `index.html`.
-6. **Enquiry form.** There is no backend. The form opens WhatsApp with the enquiry filled in, and the customer still has to press Send. No message says the enquiry was received. If you later want form submissions by email, add a form service and update the form handler in `app.js`.
+Confirmed: phone and WhatsApp +92 317 0551116; email clickhassankhan@gmail.com; address 56PM+X29, Abbottabad (Google Plus Code from the Maps listing); open Saturday to Thursday 9 AM to 8 PM, closed Friday.
+
+
+1. **Real inventory and photos.** Every listing and image is a labelled demo. Replace them with real stock and photos you own or are licensed to use.
+2. **Domain.** Once you have one, add `<link rel="canonical">` and an `og:image` in `index.html`.
+3. **Enquiry form.** There is no backend. The form opens WhatsApp with the enquiry filled in, and the customer still has to press Send. No message says the enquiry was received. If you later want form submissions by email, add a form service and update the form handler in `app.js`.
 
 ## Urdu and right-to-left later
 
