@@ -9,7 +9,10 @@
 <meta property="og:title" content="Khan Motors and Property Dealer">
 <meta property="og:description" content="Vehicle buying and selling, property buying and selling, and rental enquiries in Abbottabad, Pakistan.">
 <meta property="og:type" content="website">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="https://dkaleem495-eng.github.io/khan-motors/images/og-image.jpg">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preload" as="image" href="images/hero.jpg" imagesrcset="images/hero-1000.jpg 1000w, images/hero.jpg 1672w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -34,9 +37,7 @@
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <a class="logo" href="#home" aria-label="Khan Motors and Property Dealer, home">
-      <span class="logo-word">KHAN</span>
-      <span class="logo-rule" aria-hidden="true"></span>
-      <span class="logo-sub">Motors &amp; Property Dealer</span>
+      <img class="logo-img" src="images/logo.png" width="640" height="195" alt="Khan Motors and Property Dealer">
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span class="nav-toggle-bars" aria-hidden="true"></span>
@@ -61,6 +62,7 @@
   <!-- ============================== HOME ============================== -->
   <section class="view" data-view="home" aria-labelledby="home-title">
     <div class="hero">
+      <img class="hero-photo" src="images/hero.jpg" srcset="images/hero-1000.jpg 1000w, images/hero.jpg 1672w" sizes="100vw" width="1672" height="941" alt="" fetchpriority="high">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Abbottabad · Vehicles &amp; Property</p>
@@ -75,45 +77,6 @@
             <div><dt>Open</dt><dd><span data-bind="hoursShort"></span></dd></div>
           </dl>
         </div>
-        <figure class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 640 520" role="presentation" focusable="false">
-            <defs>
-              <linearGradient id="h-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#23262c"/><stop offset="1" stop-color="#121317"/></linearGradient>
-              <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2c52"/><stop offset="1" stop-color="#2c4271"/></linearGradient>
-              <clipPath id="h-left"><polygon points="0,0 360,0 250,520 0,520"/></clipPath>
-              <clipPath id="h-right"><polygon points="360,0 640,0 640,520 250,520"/></clipPath>
-            </defs>
-            <g clip-path="url(#h-right)">
-              <rect width="640" height="520" fill="url(#h-sky)"/>
-              <path d="M240 300 Q330 200 420 250 T560 210 T640 220 L640 520 L240 520 Z" fill="#203560"/>
-              <path d="M240 350 Q350 280 450 320 T640 300 L640 520 L240 520 Z" fill="#17284b"/>
-              <rect x="372" y="250" width="200" height="170" fill="#0e1a36"/>
-              <rect x="400" y="190" width="150" height="60" fill="#132245"/>
-              <rect x="392" y="182" width="166" height="8" fill="#c9a55c"/>
-              <rect x="364" y="243" width="216" height="8" fill="#c9a55c"/>
-              <g fill="#e7c77d"><rect x="414" y="204" width="34" height="30"/><rect x="500" y="204" width="34" height="30" opacity=".35"/><rect x="392" y="272" width="34" height="38"/><rect x="452" y="272" width="34" height="38" opacity=".35"/><rect x="514" y="272" width="34" height="38"/></g>
-              <rect x="452" y="350" width="38" height="70" fill="#081126"/>
-              <rect x="240" y="420" width="400" height="100" fill="#0f1b33"/>
-              <line x1="240" y1="420" x2="640" y2="420" stroke="#c9a55c" stroke-opacity=".5"/>
-            </g>
-            <g clip-path="url(#h-left)">
-              <rect width="640" height="520" fill="#1a1c21"/>
-              <rect y="330" width="640" height="190" fill="url(#h-road)"/>
-              <path d="M0 470 L330 410" stroke="#c9a55c" stroke-width="4" stroke-dasharray="40 26" opacity=".7"/>
-              <g transform="translate(-36 92) scale(.58)">
-                <ellipse cx="410" cy="366" rx="320" ry="16" fill="#000" opacity=".55"/>
-                <path d="M108 336 L114 282 Q120 256 160 250 L248 244 L300 180 Q310 168 334 168 L566 168 Q592 170 612 198 L652 246 Q702 254 712 290 L714 336 Q714 350 696 350 L124 350 Q102 350 108 336 Z" fill="#d9d4ca"/>
-                <path d="M306 244 L342 184 L444 184 L444 244 Z" fill="#1a2433"/>
-                <path d="M458 184 L560 184 Q578 186 590 204 L624 244 L458 244 Z" fill="#1a2433"/>
-                <rect x="672" y="276" width="30" height="10" rx="4" fill="#f3e3b5"/>
-                <circle cx="214" cy="346" r="44" fill="#0b0d10"/><circle cx="214" cy="346" r="26" fill="#6b717b"/><circle cx="214" cy="346" r="7" fill="#c9a55c"/>
-                <circle cx="610" cy="346" r="44" fill="#0b0d10"/><circle cx="610" cy="346" r="26" fill="#6b717b"/><circle cx="610" cy="346" r="7" fill="#c9a55c"/>
-              </g>
-            </g>
-            <line x1="360" y1="0" x2="250" y2="520" stroke="#c9a55c" stroke-width="2"/>
-          </svg>
-          <figcaption class="hero-art-labels"><span>Motors</span><span>Property</span></figcaption>
-        </figure>
       </div>
     </div>
 
@@ -538,9 +501,7 @@
   <div class="wrap footer-grid">
     <div>
       <a class="logo logo-footer" href="#home" aria-label="Khan Motors and Property Dealer, home">
-        <span class="logo-word">KHAN</span>
-        <span class="logo-rule" aria-hidden="true"></span>
-        <span class="logo-sub">Motors &amp; Property Dealer</span>
+        <img class="logo-img" src="images/logo-light.png" width="640" height="195" alt="Khan Motors and Property Dealer">
       </a>
       <p class="footer-note">Vehicles and property in <span data-bind="address"></span>.</p>
     </div>
